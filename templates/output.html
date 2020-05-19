@@ -1,0 +1,30 @@
+<html> 
+<head> 
+      <meta charset="UTF-8">
+      <title>शब्दभेद</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+      
+</head> 
+<body class="bg"> 
+  <h1 class="tt">शब्दभेद</h1>
+  <h2 >output</h2>
+
+  <br><br><br><br><br><br><br><br><br><br>
+<ol style="border: 2px; border-style: dotted; border-color: rgb(211, 165, 15); padding: Tokenization of input---; border-radius: 30px; width: 800px; left: 150px;" > 
+<!-- For loop logic of jinja template -->
+{%for i in range(0, len)%} 
+  
+    <li style="font-size: larger; color: antiquewhite; font-weight: 200; word-spacing: 60px; align-content: center;">&nbsp;&nbsp;&nbsp;&nbsp;{{lst[i]}}</li> 
+    <br>
+{%endfor%} 
+  
+</ol> 
+
+<br><br><br><br>
+<h3 style="font-size: 30px;   color: azure;">::::::Here is an attached visulization of a sentence:::::</h3>
+<iframe  class="n1" src="{{url_for('static' , filename= 'iframe.html')}}" style="border: 5px #293e57 none;" name="dg" scrolling="yes"></iframe>
+
+
+</body> 
+</html> 
